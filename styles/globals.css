@@ -31,7 +31,10 @@ ul {
   list-style: none;
 }
 
-picture {
+picture, section,
+header, main,
+footer, nav,
+div, img {
   margin: 0;
   padding: 0;
 }
