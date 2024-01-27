@@ -4,15 +4,15 @@
   переключая тему
 */
 :root .theme_light {
-  /* Переменные светлой темы */    
+  /* Переменные светлой темы */
   --text-color: #353430;
   --accent-color: #353430;
   --subtitle-color: #353430;
   --title-color: #FFC2E6;
   --bg-color: #FFF1F7;
   --bg-accent: #FF8DCB;
-  --border-color: #353430; 
-  --border-color-hover: rgba(50, 49, 45, 0.40); 
+  --border-color: #353430;
+  --border-color-hover: rgba(50, 49, 45, 0.40);
 }
 
 .page.theme_light {
@@ -34,15 +34,15 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */  
+    /* Дублируем переменные светлой темы */
     --text-color: #353430;
     --accent-color: #353430;
     --subtitle-color: #353430;
     --title-color: #FFC2E6;
     --bg-color: #FFF1F7;
     --bg-accent: #FF8DCB;
-    --border-color: #353430; 
-    --border-color-hover: rgba(50, 49, 45, 0.40);   
+    --border-color: #353430;
+    --border-color-hover: rgba(50, 49, 45, 0.40);
   }
 
   .page {

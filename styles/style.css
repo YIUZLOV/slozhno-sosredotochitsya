@@ -62,7 +62,7 @@
   justify-self: end;
 }
 
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -371,7 +371,7 @@ background-color: var(--bg-accent);
     align-self: flex-start;
   }
 
-  .header__theme-menu-list{
+  .header__theme-menu-list {
     flex-direction: row;
   }
 
