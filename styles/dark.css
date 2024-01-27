@@ -3,10 +3,56 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_dark {
+  /* Дублируем переменные для тёмной темы */
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --subtitle-color: #000028;
+  --title-color: #DB00FF;
+  --bg-color: #000028;
+  --bg-accent: #FF0070;
+  --border-color: #FF0070; 
+  --border-color-hover: rgba(255, 0, 112, 0.40); 
+}
+
+
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .header__logo {
+  visibility:visible;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Дублируем переменные светлой темы */  
+    --text-color: #F1B2CE;
+    --accent-color: #FF0070;
+    --subtitle-color: #000028;
+    --title-color: #DB00FF;
+    --bg-color: #000028;
+    --bg-accent: #FF0070;
+    --border-color: #FF0070; 
+    --border-color-hover: rgba(255, 0, 112, 0.40); 
+  }
+
+  .page {
+    background-color: var(--bg-color);
+    background-image: url(../images/cover-image-dark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }

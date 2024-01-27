@@ -3,10 +3,58 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_light {
+  /* Переменные светлой темы */    
+  --text-color: #353430;
+  --accent-color: #353430;
+  --subtitle-color: #353430;
+  --title-color: #FFC2E6;
+  --bg-color: #FFF1F7;
+  --bg-accent: #FF8DCB;
+  --border-color: #353430; 
+  --border-color-hover: rgba(50, 49, 45, 0.40); 
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-light.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .header__logo {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */  
+    --text-color: #353430;
+    --accent-color: #353430;
+    --subtitle-color: #353430;
+    --title-color: #FFC2E6;
+    --bg-color: #FFF1F7;
+    --bg-accent: #FF8DCB;
+    --border-color: #353430; 
+    --border-color-hover: rgba(50, 49, 45, 0.40);   
+  }
+
+  .page {
+    background-color: var(--bg-color);
+    background-image: url(../images/cover-image-light.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .header__logo {
+    visibility: hidden;
+  }
 }
