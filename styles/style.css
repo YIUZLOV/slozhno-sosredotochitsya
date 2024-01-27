@@ -4,6 +4,7 @@
   inline-size: 100%;
   background-color: var(--bg-color);
   padding-inline: 10px;
+  margin: 0 auto;
 }
 
 .header {
