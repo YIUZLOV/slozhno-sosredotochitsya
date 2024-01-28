@@ -11,6 +11,7 @@
   --title-color: #FFC2E6;
   --bg-color: #FFF1F7;
   --bg-accent: #FF8DCB;
+  --title-shadow: #FF8DCB;
   --border-color: #353430;
   --border-color-hover: rgba(50, 49, 45, 0.40);
 }
@@ -30,6 +31,10 @@
   .header__logo {
     visibility: hidden;
   }
+
+  @media (min-width: 1024px) {
+    --title-shadow: #FF0070;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -41,6 +46,7 @@
     --title-color: #FFC2E6;
     --bg-color: #FFF1F7;
     --bg-accent: #FF8DCB;
+    --title-shadow: #FF8DCB;
     --border-color: #353430;
     --border-color-hover: rgba(50, 49, 45, 0.40);
   }
@@ -57,4 +63,11 @@
   .header__logo {
     visibility: hidden;
   }
+  
+  @media (min-width: 1024px) {
+    :root {
+      --title-shadow: #FF0070;
+    }
+  }
 }
+

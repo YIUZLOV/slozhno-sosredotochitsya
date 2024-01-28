@@ -11,6 +11,7 @@
   --title-color: #DB00FF;
   --bg-color: #000028;
   --bg-accent: #FF0070;
+  --title-shadow: #FF0070;
   --border-color: #FF0070;
   --border-color-hover: rgba(255, 0, 112, 0.40);
 }
@@ -43,6 +44,7 @@
     --title-color: #DB00FF;
     --bg-color: #000028;
     --bg-accent: #FF0070;
+    --title-shadow: #FF0070;
     --border-color: #FF0070;
     --border-color-hover: rgba(255, 0, 112, 0.40);
   }

@@ -34,7 +34,7 @@ ul {
 picture, section,
 header, main,
 footer, nav,
-div, img {
+span, img {
   margin: 0;
   padding: 0;
 }
